@@ -1,0 +1,7 @@
+<app-home-image-upload (fileSelectedEmit)="onSelectedFile($event)"></app-home-image-upload>
+<div>aaa</div>
+<div *ngIf="response !== null">
+    <div *ngFor="let item of response">
+        <img src="{{item.image}}" alt="">
+    </div>
+</div>
