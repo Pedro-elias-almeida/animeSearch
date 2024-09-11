@@ -8,7 +8,7 @@ import { AnimeService } from '../../services/anime.service';
 })
 export class HomeImageUploadComponent {
   selectedFile: File | null = null;
-  @Output('fileSelectedEmit') private emitSelectedFile = new EventEmitter()
+  @Output('fileSelectedEmit') public emitSelectedFile = new EventEmitter()
 
 
   onFileSelected($event: any) {

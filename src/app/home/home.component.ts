@@ -13,7 +13,7 @@ constructor(private animeService: AnimeService){}
 onSelectedFile($event: File){
   this.animeService.animePrt($event)?.subscribe((res: any) => {
     this.response=res?.result
-  })
+  }) 
   console.log($event)
 }
 }
